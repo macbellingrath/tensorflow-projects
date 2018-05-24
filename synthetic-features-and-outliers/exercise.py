@@ -157,6 +157,7 @@ def train_model(learning_rate, steps, batch_size, input_feature):
         return calibration_data
 
 
+# create a synthetic feature
 california_housing_dataframe["rooms_per_person"] = (
     california_housing_dataframe["total_rooms"] / california_housing_dataframe["population"]
 )
